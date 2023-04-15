@@ -20,4 +20,7 @@ class Product(models.Model):
     exp_date = models.TextField() # 유통기한
     size = models.CharField(max_length=20,choices=SIZE_CHOICES,default='SMALL') # 사이즈
     create_date = models.DateTimeField() # 생성시기
-
+    
+    # 이름 으로 표시되게
+    def __str__(self):
+        return self.name
