@@ -1,0 +1,25 @@
+<!-- 부트스트랩 적용 -->
+{% load static %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'bootstrap.min.css' %}"
+/>
+
+<div class="container my-3">
+  <h1>Cafe의 메뉴입니다</h1>
+  {% if product_list %}
+  {% for product in product_list %}
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{product.name}}</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  {% endfor %}
+{% else %}
+    <h4>상품이 없습니다</h3>
+{%endif%}
+</div>
