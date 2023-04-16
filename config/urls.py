@@ -15,9 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.shortcuts import redirect
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('cafe/',include('cafe.urls')),
+]
+
+# 서버 열리자마자 http://127.0.0.1:8000/cafe/ 로 redirect
+urlpatterns += [
+    path('',lambda request: redirect('cafe:index'), name='root')
 ]

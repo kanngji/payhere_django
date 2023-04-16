@@ -23,5 +23,15 @@
 - 오류코드 404 서버가 요청한 페이지를 찾을 수 없음
 
 # 장고 템플릿 상속
+
 - 기본틀이 되는 템플릿을 먼저 작성하고 다른 템플릿에서 그 템플릿을 상속해 사용하는 방법
 
+# 파이썬 현재시각 가져오기
+
+- timezone.now() 가 되지않아서
+- from datetime import datetime
+- create_date = datetime.now() 로 해결
+
+# 로컬 서버 열자마자 local/cafe 로 redirect
+
+- config urls.py

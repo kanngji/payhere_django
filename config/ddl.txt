@@ -1,0 +1,15 @@
+INSERT INTO cafe_product(category,price,cost,name,description,barcode,exp_date,size,create_date) VALUE('커피',5000,2000,'카페라떼','달콤한 카페라떼','barcode','2023-04-17','SMAll','2022-04-16 15:30:00');
+INSERT INTO cafe_product(category,price,cost,name,description,barcode,exp_date,size,create_date) VALUE('음료',4000,2000,'밀크티','달콤한 밀크티','barcode','2023-04-30','LARGE','2022-04-16 15:30:00');
+INSERT INTO cafe_product(category,price,cost,name,description,barcode,exp_date,size,create_date) VALUE('빵',7500,4500,'점보빵','2인이서 먹을 점보방','barcode','2023-04-17','LARGE','2022-04-16 15:30:00');
+INSERT INTO cafe_product(category,price,cost,name,description,barcode,exp_date,size,create_date) VALUE('디저트',3500,1200,'마카롱','달콤한 마카롱','barcode','2023-04-13','SMAll','2022-04-16 15:30:00');
+INSERT INTO cafe_product(category,price,cost,name,description,barcode,exp_date,size,create_date) VALUE('커피',4000,1234,'아이스 라떼','시원한 아이스라떼','barcode','2023-04-15','LARGE','2022-04-16 15:30:00');
+INSERT INTO cafe_product(category,price,cost,name,description,barcode,exp_date,size,create_date) VALUE('음료',3000,1234,'야채 쥬스','야채가 들어간 쥬스','barcode','2023-04-10','LARGE','2022-04-16 15:30:00');
+INSERT INTO cafe_product(category,price,cost,name,description,barcode,exp_date,size,create_date) VALUE('빵',2000,1234,'소보로빵','바삭바삭 소보로빵','barcode','2023-04-12','SMAll','2022-04-16 15:30:00');
+INSERT INTO cafe_product(category,price,cost,name,description,barcode,exp_date,size,create_date) VALUE('디저트',3000,1234,'시즌 과일쥬스','신선한 제철과일 쥬스','barcode','2023-04-18','SMAll','2022-04-16 15:30:00');
+INSERT INTO cafe_product(category,price,cost,name,description,barcode,exp_date,size,create_date) VALUE('케익',5500,1234,'딸기 케익','신선한 딸기 케익','barcode','2023-04-21','SMAll','2022-04-16 15:30:00');
+INSERT INTO cafe_product(category,price,cost,name,description,barcode,exp_date,size,create_date) VALUE('케익',4500,1234,'고구마 케익','당일 만든 고구마 케익','barcode','2023-04-17','SMAll','2022-04-16 15:30:00');
+INSERT INTO cafe_product(category,price,cost,name,description,barcode,exp_date,size,create_date) VALUE('커피',6000,1234,'프라푸치노','생크림이 들어간 프라푸치노','barcode','2023-04-17','SMAll','2022-04-16 15:30:00');
+INSERT INTO cafe_product(category,price,cost,name,description,barcode,exp_date,size,create_date) VALUE('커피',4500,1234,'말차 라떼','제주도 말차 라떼','barcode','2023-04-15','SMAll','2022-04-16 15:30:00');
+INSERT INTO cafe_product(category,price,cost,name,description,barcode,exp_date,size,create_date) VALUE('음료',3500,1234,'복숭아 티','은은한 복숭아 티','barcode','2023-04-12','SMAll','2022-04-16 15:30:00');
+INSERT INTO cafe_product(category,price,cost,name,description,barcode,exp_date,size,create_date) VALUE('빵',2000,1234,'팥빵','팥 빵','신선한 팥이 들어간 빵','2023-04-10','SMAll','2022-04-16 15:30:00');
+INSERT INTO cafe_product(category,price,cost,name,description,barcode,exp_date,size,create_date) VALUE('디저트',1000,500,'쿠키','갓 구운 쿠키','barcode','2023-04-9','SMAll','2022-04-16 15:30:00');

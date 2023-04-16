@@ -3,11 +3,15 @@ from datetime import datetime
 from django.shortcuts import redirect, render, get_object_or_404
 from .models import Product
 from .forms import ProductForm
+from django.core.paginator import Paginator
 # Create your views here.
 
 def index(request):
+    page = request.GET.get('page','1') # 페이지
     product_list = Product.objects.order_by('-create_date')
-    context = {'product_list': product_list}
+    paginator = Paginator(product_list,10) # 페이지당 10개씩
+    page_obj = paginator.get_page(page)
+    context = {'product_list': page_obj}
     return render(request, 'cafe/product_list.html', context) 
 
 # 상세조회
