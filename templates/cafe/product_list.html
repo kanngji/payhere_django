@@ -1,10 +1,6 @@
 <!-- 부트스트랩 적용 -->
-{% load static %}
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="{% static 'bootstrap.min.css' %}"
-/>
+{% extends 'base.html'%}
+{% block content %}
 
 <div class="container my-3">
   <h1>Cafe의 메뉴입니다</h1>
@@ -13,13 +9,18 @@
   <div class="card" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">{{product.name}}</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title">이름: {{product.name}}</h5>
+      <p class="card-text">카테고리 :{{product.category}}</p>
+      <p class="card-text">가격: {{product.price}}원</p>
+      <p class="card-text">설명: {{product.description}}</p>
+      <p class="card-text">사이즈: {{product.size}}</p>
+      <a href="{% url 'cafe:detail' product.id %}" class="btn btn-primary">자세히</a>
     </div>
   </div>
   {% endfor %}
 {% else %}
     <h4>상품이 없습니다</h3>
 {%endif%}
+<a href="{% url 'cafe:product_create' %}" class="btn btn-primary">상품 등록하기</a>
 </div>
+{% endblock %}

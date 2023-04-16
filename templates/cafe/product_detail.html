@@ -1,5 +1,15 @@
-{% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'style.css'%}" />
+{% extends 'base.html'%} {% block content %}
+<!-- 상품 상세 내역 -->
+<!-- 상품 속성 -->
+<!-- 카테고리,가격,원가,이름,설명,바코드,유통기한,사이즈,생성시기-->
+<h3>카테고리: {{product.category}}</h3>
+<h3>이름: {{product.name}}</h3>
+<h3>가격: {{product.price}}</h3>
+<h3>원가: {{product.cost}}</h3>
+<h3>설명: {{product.description}}</h3>
+<h3>바코드: {{product.barcode}}</h3>
+<h3>유통기한: {{product.exp_date}}</h3>
+<h3>사이즈: {{product.size}}</h3>
+<h3>등록일자: {{product.create_date}}</h3>
 
-<h1>{{product.name}}</h1>
-<div>{{product.price}}</div>
+{%endblock%}
