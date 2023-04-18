@@ -35,3 +35,8 @@
 # 로컬 서버 열자마자 local/cafe 로 redirect
 
 - config urls.py
+
+# common 회원가입 폼에서 phonenumber 정규화
+
+- leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
+- models.CharField() 로 해결
